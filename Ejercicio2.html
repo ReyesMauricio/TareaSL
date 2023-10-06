@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario con Validación</title>
+    <style>
+        .input-empty {
+            background-color: gray;
+        }
+
+        .input-filled {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="input-empty" required>
+
+        <label for="dui">DUI:</label>
+        <input type="text" id="dui" class="input-empty" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" class="input-empty" required>
+
+        <label for="genero">Género:</label>
+        <select id="genero" class="input-empty" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" class="input-empty" required>
+            <option value="San Miguel">San Miguel</option>
+            <option value="Morazán">Morazán</option>
+            <option value="La Unión">La Unión</option>
+        </select>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Enlace a tu archivo JavaScript -->
+    <script src="script2.js"></script>
+</body>
+</html>
